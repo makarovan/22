@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 
 use App\Models\Category;
 use App\Models\Task;
@@ -22,41 +23,51 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('start');
 });
 
-Route::get('/dashboard', [Controller::class, 'dashboard']);
+Route::group(['middleware'=>['auth']],function(){
+    //for all auth users
+    Route::get('/dashboard',[Controller::class,'dashboard'])->name('dashboard');
+    //admin, manager
+    Route::middleware('manager')->group(function(){
+        // category
+        Route::get('/categorylist', [CategoryController::class, 'index']);
+        Route::get('/addcategory', [CategoryController::class, 'create']);
+        Route::post('/addcategory', [CategoryController::class, 'store']);
+        
+        Route::get('/editcategory/{category}', [CategoryController::class, 'edit']);
+        Route::post('/editcategory/{category}', [CategoryController::class, 'update']);
+        
+        Route::delete('/deletecategory/{category}', [CategoryController::class, 'destroy']);
+        // news
+        Route::get('/productlist', [TaskController::class, 'index']);
+        Route::post('/productBycategory', [TaskController::class, 'taskByCategory']);
+        Route::get('/addtask', [TaskController::class, 'create']);
+        Route::post('/addtask', [TaskController::class, 'store']);
+        
+        Route::get('/edittask/{task}', [TaskController::class, 'edit']);
+        Route::post('/edittask/{task}', [TaskController::class, 'update']);
+        //delete ссылкой
+        Route::get('/deletetask/{task}', [TaskController::class, 'destroy']);
+        //delete form
+        Route::delete('/deletetask/{task}', [TaskController::class, 'destroy']);
+    });
+    //admin only
+    Route::middleware('admin')->group(function(){
+        // users
+        Route::get('/users', [UserController::class, 'index']);
+        Route::post('/userByrole', [UserController::class, 'userByrole']);
+        Route::get('/adduser', [UserController::class, 'create']);
+        Route::post('/adduser', [UserController::class, 'store']);
+    });
+    //for users
+    Route::get('/profile/{user}', [UserController::class, 'edit']);
+    Route::get('/edituser/{user}', [UserController::class, 'edit']);
+    Route::post('/edituser/{user}', [UserController::class, 'update']);
+});
 
-// category
-Route::get('/categorylist', [CategoryController::class, 'index']);
-Route::get('/addcategory', [CategoryController::class, 'create']);
-Route::post('/addcategory', [CategoryController::class, 'store']);
-
-Route::get('/editcategory/{category}', [CategoryController::class, 'edit']);
-Route::post('/editcategory/{category}', [CategoryController::class, 'update']);
-
-Route::delete('/deletecategory/{category}', [CategoryController::class, 'destroy']);
-
-// news
-Route::get('/productlist', [TaskController::class, 'index']);
-Route::post('/productBycategory', [TaskController::class, 'taskByCategory']);
-Route::get('/addtask', [TaskController::class, 'create']);
-Route::post('/addtask', [TaskController::class, 'store']);
-
-Route::get('/edittask/{task}', [TaskController::class, 'edit']);
-Route::post('/edittask/{task}', [TaskController::class, 'update']);
-
-//a delete
-Route::get('/deletetask/{task}', [TaskController::class, 'destroy']);
-//method delete needs form
-Route::delete('/deletetask/{task}', [TaskController::class, 'destroy']);
-
-// users
-Route::get('/users', [UserController::class, 'index']);
-Route::post('/userByrole', [UserController::class, 'userByrole']);
-Route::get('/adduser', [UserController::class, 'create']);
-Route::post('/adduser', [UserController::class, 'store']);
-
-Route::get('/edituser/{user}', [UserController::class, 'edit']);
-Route::post('/edituser/{user}', [UserController::class, 'update']);
-
+//for non auth users login + logout
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'authenticate']);//обработка формы логин
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

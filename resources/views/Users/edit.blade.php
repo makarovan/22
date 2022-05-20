@@ -30,7 +30,9 @@
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="form-group">
 					<strong>Role:</strong>
-					<select class="form-control input-sm" name="role">
+					<select class="form-control input-sm" name="role"
+						@if(Auth::user()->role!='admin') disabled @endif
+					>
 						@foreach($roles as $role)
 						<option value="{{$role}}"
 							@if($role==$user->role)

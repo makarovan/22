@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Auth;
 use Hash;
 
 class UserController extends Controller
@@ -102,6 +103,7 @@ class UserController extends Controller
         $request->validate([
             'name'=>'required|string|max:255'
         ]);
+        if(!isset($request->role)) $request->role=Auth::user()->role;
         if($request->password){
             $request->validate([
                 'password'=> 'required|string|min:6|confirmed',
