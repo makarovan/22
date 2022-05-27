@@ -21,4 +21,9 @@ class Task extends Model
     public function category(){
     	return $this->belongsTo('App\Models\Category', 'category_id');
     }
+
+    
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }

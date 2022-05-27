@@ -75,7 +75,7 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        //
+        return view('tasks.detail', compact('task'));
     }
 
     /**
@@ -127,5 +127,10 @@ class TaskController extends Controller
     {
         $task->delete();
         return redirect('/productlist');
+    }
+
+    public function listLimit3(){
+        $tasks = Task::orderBy('created_at', 'desc')->limit(3)->get();
+        return view('startMainPage', compact('tasks'));
     }
 }

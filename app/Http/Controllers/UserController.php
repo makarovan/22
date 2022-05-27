@@ -68,6 +68,29 @@ class UserController extends Controller
         return redirect('users');
     }
 
+    public function formRegister()
+    {
+        return view('users.registration');
+    }
+    public function storeRegister(Request $request)
+    {
+        $request->validate([
+            'name'=>'required|string|max:255',
+            'email'=>'required|string|email|max:255|unique:users',
+            'password'=>'required|string|min:6|confirmed',
+            'password_confirmation'=>'required',
+        ]);
+
+        User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>Hash::make($request->password),
+            'role'=>'user',
+        ]);
+
+        return redirect('/register')->with('message', 'Вы успешно зарегистрировались!');
+    }
+
     /**
      * Display the specified resource.
      *

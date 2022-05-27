@@ -99,6 +99,7 @@
             <li><a href="{{ url('/productlist') }}"><i class="fa fa-circle-o"></i> Product list</a></li>
           </ul>
         </li>
+        <li><a href="{{ url('/comments') }}"><i class="fa fa-comments"></i> <span>Comments</span></a></li>		
       @endif
 			@if(Gate::allows('isAdmin'))  
         <li><a href="{{ url('/users') }}"><i class="fa fa-users"></i> <span>Users</span></a></li>		
