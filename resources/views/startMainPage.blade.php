@@ -1,7 +1,11 @@
 @extends('layouts.appMain')
 @section('content')
 
+<<<<<<< HEAD
 <div class="content" style="min-height:450px; height:100%; width:45%; margin:40px auto; display:block; ">
+=======
+<div class="content" <div class="content" style="min-height:450px; height:100%; width:45%; margin:40px auto; display:block; ">
+>>>>>>> d1d6e47a07045ea97051dc0d8604fff06bd81ebb
   @foreach($tasks as $task)
   <div class="card mb-3" style="width:28%; float:left; display:block; margin:0 2%; overflow:hidden;" >
     <img src="{{asset('images/'.$task->image)}}" style="height:200px; max-width:100%;">
