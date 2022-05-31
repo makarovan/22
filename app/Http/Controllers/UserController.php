@@ -1,5 +1,14 @@
 <?php
-
+/**
+ * User Controller - CRUD: list, add, edit, delete.
+ * 
+ * Action array users - table user
+ * Models Users
+ * 
+ * @version 1.0
+ * @author JKTV20 Makarova 2022
+ * @copyright Copyright 2022
+ */
 namespace App\Http\Controllers;
 
 use App\Models\User;
@@ -10,9 +19,10 @@ use Hash;
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a list of users.
      *
-     * @return \Illuminate\Http\Response
+     * @return array $roles all user roles
+     * @return array $users all users
      */
     public function index()
     {
@@ -21,6 +31,17 @@ class UserController extends Controller
         return view('users.index', compact('users', 'roles'));
     }
 
+    /**
+     * Show a list of users with a certain role.
+     * 
+     * Sort users by roles
+     * 
+     * @param \Illuminate\Http\Request  $request
+     * @param array $data all request data
+     * @return array $roles all user roles
+     * @return string $selectedRole role that was selected for sorting
+     * @return array $users all users with the role
+     */
     public function userByrole(Request $request){
         $roles = array('admin', 'manager', 'user');
         $data = $request->all();
@@ -34,9 +55,9 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new user.
      *
-     * @return \Illuminate\Http\Response
+     * @return array $roles all user roles
      */
     public function create()
     {
@@ -45,10 +66,11 @@ class UserController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created model user in table.
+     * 
+     * Validates fields and creates model user
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request  $request user's input
      */
     public function store(Request $request)
     {
@@ -69,21 +91,44 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * Show a form for registration.
      */
-    public function show(User $user)
+    public function formRegister()
     {
-        //
+        return view('users.registration');
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Store a newly created model user in table.
+     * 
+     * Store a model user with role 'user' and returns guest to a register page with a message
+     * 
+     * @param  \Illuminate\Http\Request  $request user's input
+     */
+    public function storeRegister(Request $request)
+    {
+        $request->validate([
+            'name'=>'required|string|max:255',
+            'email'=>'required|string|email|max:255|unique:users',
+            'password'=>'required|string|min:6|confirmed',
+            'password_confirmation'=>'required',
+        ]);
+
+        User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>Hash::make($request->password),
+            'role'=>'user',
+        ]);
+
+        return redirect('/register')->with('message', 'Вы успешно зарегистрировались!');
+    }
+
+    /**
+     * Show the form for editing the user.
      *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @param  \App\Models\User  $user user we need to edit
+     * @return array $roles all user roles
      */
     public function edit(User $user)
     {
@@ -92,11 +137,10 @@ class UserController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified user in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request  $request data about the user needed to update
+     * @param  \App\Models\User  $user user we update
      */
     public function update(Request $request, User $user)
     {
@@ -121,16 +165,5 @@ class UserController extends Controller
             ]);
         }
         return redirect('/users');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(User $user)
-    {
-        //
     }
 }

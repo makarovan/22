@@ -6,6 +6,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CommentController;
 
 use App\Models\Category;
 use App\Models\Task;
@@ -22,9 +23,19 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    return view('start');
-});
+Route::get('/', [TaskController::class, 'listLimit3']);
+
+Route::get('/show/{task}', [TaskController::class, 'show'])->name('task.show');
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+
+Route::get('/news', [CategoryController::class, 'listMenu']);
+Route::get('/news/{category}', [CategoryController::class, 'newsByCategory']);
+
+Route::post('/sortNews', [CategoryController::class, 'sortNews']);
+Route::post('/search', [CategoryController::class, 'search']);
+
+Route::get('/register', [UserController::class, 'formRegister']);
+Route::post('/register', [UserController::class, 'storeRegister']);
 
 Route::group(['middleware'=>['auth']],function(){
     //for all auth users
@@ -52,6 +63,10 @@ Route::group(['middleware'=>['auth']],function(){
         Route::get('/deletetask/{task}', [TaskController::class, 'destroy']);
         //delete form
         Route::delete('/deletetask/{task}', [TaskController::class, 'destroy']);
+
+        //comments
+        Route::get('/comments', [CommentController::class, 'index']);
+        Route::get('deletecomment/{comment}', [CommentController::class, 'destroy']);
     });
     //admin only
     Route::middleware('admin')->group(function(){

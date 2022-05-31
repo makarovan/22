@@ -19,4 +19,8 @@ class Category extends Model
     public function task(){
     	return $this->hasMany('App/Models/Task');
     }
+    public function tasks(){
+        return $this->hasMany(Task::class, 'category_id');
+       
+    }
 }

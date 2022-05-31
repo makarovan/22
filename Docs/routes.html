@@ -1,0 +1,2329 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Routes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.13.3/swagger-ui.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(document).on('click', '.opblock-summary', function(){
+                    $(this).closest('.opblock').find('.opblock-body').slideToggle("slow");
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <section id="routes" class="doc-section swagger-ui">
+            <h2 class="section-title">Route documentation</h2>
+            <div class="section-block">
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">DELETE     deletecategory/{category} .................................................... CategoryController@destro</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>DELETE     deletecategory/{category} .................................................... CategoryController@destro</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">DELETE     deletecategory/{category} .................................................... CategoryController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> DELETE     deletecategory/{category} .................................................... CategoryController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> DELETE     deletecategory/{category} .................................................... CategoryController@destro </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">DELETE     deletetask/{task} ................................................................ TaskController@destro</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>DELETE     deletetask/{task} ................................................................ TaskController@destro</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">DELETE     deletetask/{task} ................................................................ TaskController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> DELETE     deletetask/{task} ................................................................ TaskController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> DELETE     deletetask/{task} ................................................................ TaskController@destro </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   _ignition/health-check ............ ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckControlle</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   _ignition/health-check ............ ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckControlle</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   _ignition/health-check ............ ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckControlle</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   _ignition/health-check ............ ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckControlle</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   _ignition/health-check ............ ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckControlle </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   addcategory ................................................................... CategoryController@creat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   addcategory ................................................................... CategoryController@creat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   addcategory ................................................................... CategoryController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   addcategory ................................................................... CategoryController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   addcategory ................................................................... CategoryController@creat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   addtask ........................................................................... TaskController@creat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   addtask ........................................................................... TaskController@creat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   addtask ........................................................................... TaskController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   addtask ........................................................................... TaskController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   addtask ........................................................................... TaskController@creat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   adduser ........................................................................... UserController@creat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   adduser ........................................................................... UserController@creat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   adduser ........................................................................... UserController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   adduser ........................................................................... UserController@creat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   adduser ........................................................................... UserController@creat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   api/user ................................................................................................</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   api/user ................................................................................................</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   api/user ................................................................................................</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   api/user ................................................................................................</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   api/user ................................................................................................ </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   categorylist ................................................................... CategoryController@inde</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   categorylist ................................................................... CategoryController@inde</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   categorylist ................................................................... CategoryController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   categorylist ................................................................... CategoryController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   categorylist ................................................................... CategoryController@inde </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   comments ........................................................................ CommentController@inde</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   comments ........................................................................ CommentController@inde</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   comments ........................................................................ CommentController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   comments ........................................................................ CommentController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   comments ........................................................................ CommentController@inde </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   dashboard .............................................................. dashboard › Controller@dashboar</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   dashboard .............................................................. dashboard › Controller@dashboar</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   dashboard .............................................................. dashboard › Controller@dashboar</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   dashboard .............................................................. dashboard › Controller@dashboar</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   dashboard .............................................................. dashboard › Controller@dashboar </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   deletecomment/{comment} ....................................................... CommentController@destro</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   deletecomment/{comment} ....................................................... CommentController@destro</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   deletecomment/{comment} ....................................................... CommentController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   deletecomment/{comment} ....................................................... CommentController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   deletecomment/{comment} ....................................................... CommentController@destro </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   deletetask/{task} ................................................................ TaskController@destro</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   deletetask/{task} ................................................................ TaskController@destro</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   deletetask/{task} ................................................................ TaskController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   deletetask/{task} ................................................................ TaskController@destro</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   deletetask/{task} ................................................................ TaskController@destro </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   editcategory/{category} ......................................................... CategoryController@edi</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   editcategory/{category} ......................................................... CategoryController@edi</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   editcategory/{category} ......................................................... CategoryController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   editcategory/{category} ......................................................... CategoryController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   editcategory/{category} ......................................................... CategoryController@edi </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   edittask/{task} ..................................................................... TaskController@edi</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   edittask/{task} ..................................................................... TaskController@edi</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   edittask/{task} ..................................................................... TaskController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   edittask/{task} ..................................................................... TaskController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   edittask/{task} ..................................................................... TaskController@edi </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   edituser/{user} ..................................................................... UserController@edi</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   edituser/{user} ..................................................................... UserController@edi</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   edituser/{user} ..................................................................... UserController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   edituser/{user} ..................................................................... UserController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   edituser/{user} ..................................................................... UserController@edi </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   login ...................................................................... login › AuthController@logi</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   login ...................................................................... login › AuthController@logi</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   login ...................................................................... login › AuthController@logi</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   login ...................................................................... login › AuthController@logi</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   login ...................................................................... login › AuthController@logi </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   logout ................................................................... logout › AuthController@logou</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   logout ................................................................... logout › AuthController@logou</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   logout ................................................................... logout › AuthController@logou</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   logout ................................................................... logout › AuthController@logou</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   logout ................................................................... logout › AuthController@logou </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   news ........................................................................ CategoryController@listMen</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   news ........................................................................ CategoryController@listMen</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   news ........................................................................ CategoryController@listMen</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   news ........................................................................ CategoryController@listMen</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   news ........................................................................ CategoryController@listMen </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   news/{category} ....................................................... CategoryController@newsByCategor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   news/{category} ....................................................... CategoryController@newsByCategor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   news/{category} ....................................................... CategoryController@newsByCategor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   news/{category} ....................................................... CategoryController@newsByCategor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   news/{category} ....................................................... CategoryController@newsByCategor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   productlist ........................................................................ TaskController@inde</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   productlist ........................................................................ TaskController@inde</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   productlist ........................................................................ TaskController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   productlist ........................................................................ TaskController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   productlist ........................................................................ TaskController@inde </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   profile/{user} ...................................................................... UserController@edi</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   profile/{user} ...................................................................... UserController@edi</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   profile/{user} ...................................................................... UserController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   profile/{user} ...................................................................... UserController@edi</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   profile/{user} ...................................................................... UserController@edi </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   register .................................................................... UserController@formRegiste</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   register .................................................................... UserController@formRegiste</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   register .................................................................... UserController@formRegiste</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   register .................................................................... UserController@formRegiste</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   register .................................................................... UserController@formRegiste </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   sanctum/csrf-cookie ......................................... Laravel\Sanctum › CsrfCookieController@sho</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   sanctum/csrf-cookie ......................................... Laravel\Sanctum › CsrfCookieController@sho</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   sanctum/csrf-cookie ......................................... Laravel\Sanctum › CsrfCookieController@sho</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   sanctum/csrf-cookie ......................................... Laravel\Sanctum › CsrfCookieController@sho</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   sanctum/csrf-cookie ......................................... Laravel\Sanctum › CsrfCookieController@sho </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   show/{task} ............................................................. task.show › TaskController@sho</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   show/{task} ............................................................. task.show › TaskController@sho</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   show/{task} ............................................................. task.show › TaskController@sho</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   show/{task} ............................................................. task.show › TaskController@sho</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   show/{task} ............................................................. task.show › TaskController@sho </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">GET|HEAD   users .............................................................................. UserController@inde</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>GET|HEAD   users .............................................................................. UserController@inde</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">GET|HEAD   users .............................................................................. UserController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> GET|HEAD   users .............................................................................. UserController@inde</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> GET|HEAD   users .............................................................................. UserController@inde </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigControlle</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigControlle</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigControlle</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigControlle</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigControlle </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       addcategory .................................................................... CategoryController@stor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       addcategory .................................................................... CategoryController@stor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       addcategory .................................................................... CategoryController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       addcategory .................................................................... CategoryController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       addcategory .................................................................... CategoryController@stor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       addtask ............................................................................ TaskController@stor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       addtask ............................................................................ TaskController@stor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       addtask ............................................................................ TaskController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       addtask ............................................................................ TaskController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       addtask ............................................................................ TaskController@stor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       adduser ............................................................................ UserController@stor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       adduser ............................................................................ UserController@stor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       adduser ............................................................................ UserController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       adduser ............................................................................ UserController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       adduser ............................................................................ UserController@stor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       comments ....................................................... comments.store › CommentController@stor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       comments ....................................................... comments.store › CommentController@stor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       comments ....................................................... comments.store › CommentController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       comments ....................................................... comments.store › CommentController@stor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       comments ....................................................... comments.store › CommentController@stor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       editcategory/{category} ....................................................... CategoryController@updat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       editcategory/{category} ....................................................... CategoryController@updat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       editcategory/{category} ....................................................... CategoryController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       editcategory/{category} ....................................................... CategoryController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       editcategory/{category} ....................................................... CategoryController@updat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       edittask/{task} ................................................................... TaskController@updat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       edittask/{task} ................................................................... TaskController@updat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       edittask/{task} ................................................................... TaskController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       edittask/{task} ................................................................... TaskController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       edittask/{task} ................................................................... TaskController@updat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       edituser/{user} ................................................................... UserController@updat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       edituser/{user} ................................................................... UserController@updat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       edituser/{user} ................................................................... UserController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       edituser/{user} ................................................................... UserController@updat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       edituser/{user} ................................................................... UserController@updat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       login ....................................................................... AuthController@authenticat</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       login ....................................................................... AuthController@authenticat</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       login ....................................................................... AuthController@authenticat</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       login ....................................................................... AuthController@authenticat</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       login ....................................................................... AuthController@authenticat </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       productBycategory ......................................................... TaskController@taskByCategor</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       productBycategory ......................................................... TaskController@taskByCategor</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       productBycategory ......................................................... TaskController@taskByCategor</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       productBycategory ......................................................... TaskController@taskByCategor</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       productBycategory ......................................................... TaskController@taskByCategor </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       register ................................................................... UserController@storeRegiste</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       register ................................................................... UserController@storeRegiste</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       register ................................................................... UserController@storeRegiste</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       register ................................................................... UserController@storeRegiste</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       register ................................................................... UserController@storeRegiste </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       search ........................................................................ CategoryController@searc</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       search ........................................................................ CategoryController@searc</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       search ........................................................................ CategoryController@searc</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       search ........................................................................ CategoryController@searc</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       search ........................................................................ CategoryController@searc </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       sortNews .................................................................... CategoryController@sortNew</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       sortNews .................................................................... CategoryController@sortNew</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       sortNews .................................................................... CategoryController@sortNew</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       sortNews .................................................................... CategoryController@sortNew</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       sortNews .................................................................... CategoryController@sortNew </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                                    <div class="opblock opblock-">
+                        <div class="opblock-summary opblock-summary-">
+                            <span class="opblock-summary-method">POST       userByrole .................................................................... UserController@userByrol</span>
+                            <span class="opblock-summary-path">
+                                                            <a class="nostyle">
+                                                                <span>POST       userByrole .................................................................... UserController@userByrol</span>
+                                                            </a>
+                                                            <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xOSA3djRINS44M2wzLjU4LTMuNTlMOCA2bC02IDYgNiA2IDEuNDEtMS40MUw1LjgzIDEzSDIxVjd6Ii8+Cjwvc3ZnPgo=" class="view-line-link">
+                                                        </span> <!-- opblock-summary-path -->
+                            <div class="opblock-summary-description"></div>
+                            <button class="authorization__btn unlocked" aria-label="authorization button unlocked">
+                                <svg width="20" height="20">
+                                    <use href="#unlocked" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#unlocked"></use>
+                                </svg>
+                            </button>
+                        </div> <!-- opblock-summary -->
+                        <div class="opblock-body" style="display: none;"><!-- react-text: 1914 --><!-- /react-text -->
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Information</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                <div class="table-container">
+                                    <table class="parameters">
+                                        <thead>
+                                        <tr>
+                                            <th class="col col_header parameters-col_name">Route name</th>
+                                            <th class="col col_header parameters-col_controller">Controller</th>
+                                            <th class="col col_header parameters-col_middleware">Middleware</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col parameters-col_name">
+                                                <div class="markdown">POST       userByrole .................................................................... UserController@userByrol</div>
+                                            </td>
+                                            <td class="col parameters-col_controller">
+                                                <div class="markdown"> POST       userByrole .................................................................... UserController@userByrol</div>
+                                            </td>
+                                            <td class="col parameters-col_middleware">
+                                                <div class="markdown"> POST       userByrole .................................................................... UserController@userByrol </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- table-container -->
+                            </div> <!-- opblock-section -->
+
+                            <div class="opblock-section">
+                                <div class="opblock-section-header">
+                                    <div class="tab-header">
+                                        <h4 class="opblock-title">Parameters</h4>
+                                    </div>
+                                </div> <!-- opblock-section-header -->
+                                                                    <div class="opblock-description-wrapper"><p>Parameters</p></div>
+                                                            </div> <!-- opblock-section -->
+                        </div> <!-- opblock-body -->
+                    </div> <!-- opblock -->
+                            </div> <!-- opblock -->
+        </section><!--//doc-section-->
+    </body>
+</html>
+
